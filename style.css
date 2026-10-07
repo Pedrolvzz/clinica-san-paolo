@@ -1,0 +1,379 @@
+:root {
+    --cor-principal: #163f32;
+    --cor-fundo: #f5f7f5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  font-family: Arial, sans-serif;
+  color: #253446;
+  line-height: 1.6;
+  margin: 0;
+}
+
+header {
+  background-color: white;
+  color: var(--cor-principal);
+  padding: 24px;
+  text-align: center;
+}
+
+.especialidade {
+  background-color: white;
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid #dce5df;
+  border-top: 3px solid var(--cor-principal);
+  box-shadow: 0 4px 6px rgba(20, 60, 45, 0.06);
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.lista-especialidades {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.apresentacao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  text-align: left;
+  padding: 32px;
+  margin-bottom: 64px;
+  background: linear-gradient(135deg, #e6f2ec, #f5f7f5);
+  border-radius: 24px; 
+}
+
+.botao {
+  background-color: var(--cor-principal);
+  border-radius: 8px;
+  color: white;
+  display: inline-block;
+  padding: 12px 20px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.botao:hover {
+  background-color: #174735;
+}
+
+.botao:focus-visible {
+  outline: 3px solid #253446;
+  outline-offset: 4px;
+}
+
+footer {
+  background-color: var(--cor-principal);
+  color: white;
+  text-align: center;
+  padding: 24px;
+}
+
+.contato {
+  background-color: white;
+  padding: 40px;
+  border-radius: 16px;
+  margin-top: 40px;
+  border: 1px solid #dce5df;
+
+}
+
+.links-contato {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.apresentacao h1 {
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.apresentacao img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(22, 63, 50, 0.12);
+}
+
+.nome-clinica {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.cep {
+    white-space: nowrap;
+}
+
+.passos-agendamento {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--cor-principal);
+    padding: 8px 12px;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    background-color: #e6f2ec;
+    border-radius: 4px;
+    text-decoration: underline;
+}
+
+nav a:focus-visible {
+    outline: 2px solid var(--cor-principal);
+    outline-offset: 4px;
+    text-decoration: underline;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.especialidade h3 {
+    color: var(--cor-principal);
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.especialidade p {
+    margin-bottom: 0;
+    color: #52645b;
+    line-height: 1.4;
+}
+
+.conteudo-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 24px;
+}
+
+.links-contato a:not(.botao) {
+    color: var(--cor-principal);
+    padding: 8px 12px;
+}
+
+.links-contato a:focus-visible {
+    outline: 2px solid var(--cor-principal);
+    outline-offset: 4px;
+    text-decoration: underline;
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo-secao h2 {
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 12px 0;
+}
+
+.titulo-secao p {
+    color: #52645b;
+}
+
+.botao-secundario {
+    display: inline-block;
+    padding: 12px 20px;
+    border: 1px solid var(--cor-principal);
+    border-radius: 8px;
+    color: var(--cor-principal);
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.acoes-apresentacao {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.botao-secundario:hover {
+    background-color: #dcece3;
+}
+
+.botao-secundario:focus-visible {
+    outline: 2px solid var(--cor-principal);
+    outline-offset: 4px;
+}
+
+.rotulo,
+.titulo-secao .rotulo {
+    color: var(--cor-principal);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.dados-contato {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer p {
+    margin: 4px 0;
+}
+
+.localizacao-rodape {
+    font-size: 14px;
+}
+
+.descricao-apresentacao {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #52645b;
+}
+
+.como-agendar {
+    margin-top: 64px;
+    padding: 40px;
+    background-color: #e6f2ec;
+    border-radius: 24px;
+}
+
+.como-agendar h2 {
+    text-align: center;
+    font-size: 32px;
+    margin: 0 0 32px;
+}
+
+.passo {
+    background-color: white;
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid #dce5df;
+}
+
+.numero-passo {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #e6f2ec;
+    color: var(--cor-principal);
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.acao-agendamento {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.perguntas {
+    max-width: 800px;
+    margin: 64px auto;
+}
+
+.perguntas h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+.perguntas details {
+    background-color: white;
+    border: 1px solid #dce5df;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+.perguntas summary {
+    color: var(--cor-principal);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.perguntas details p {
+    color: #52645b;
+    margin-bottom: 0;
+}
+
+.perguntas summary:focus-visible {
+    outline: 2px solid var(--cor-principal);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+@media (max-width: 900px) {
+    .lista-especialidades {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+  .lista-especialidades {
+    grid-template-columns: 1fr;
+  }
+
+  .apresentacao {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+
+  .apresentacao h1 {
+    font-size: 32px;
+  }
+
+  .conteudo-cabecalho {
+    flex-direction: column;
+  }
+
+  .contato {
+    padding: 24px;
+
+    }
+
+  .acoes-apresentacao a {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+
+  }
+
+  .passos-agendamento {
+    grid-template-columns: 1fr;
+  }
+
+  .como-agendar {
+    padding: 24px;
+  }
+
+}
