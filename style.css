@@ -332,6 +332,14 @@ footer p {
     border-radius: 4px;
 }
 
+.mapa-clinica {
+    display: block;
+    width: 100%;
+    height: 320px;
+    margin-top: 32px;
+    border-radius: 12px;
+}
+
 @media (max-width: 900px) {
     .lista-especialidades {
         grid-template-columns: 1fr 1fr;
